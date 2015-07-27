@@ -1,25 +1,25 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link href="app.css" rel="stylesheet" />
-  </head>
-  <body>
-    <div class="todo">
-      <h1>Darth's To-Do</h1>
-      <form action="" method="POST">
-        <div>
-          <input class="todo__input" type="text" placeholder="Enter task..." />
-        </div>
-        <ul class="todo__items" data-js="todoItems">
-          <li>
-            There are currently no tasks.
-            <br />
-            Please enter an item in the field above.
-          </li>
-        </ul>
-      </form>
-    </div>
-
-    <script src="app.js" async></script>
-  </body>
+<html lang="en">
+<head>
+  <title>Get Shit Done</title>
+  <link href="app.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="todo">
+    <h1>Darth's To-Do</h1>
+    <form action="" method="POST" data-js="myStoopidForm">
+      <div>
+        <input class="todo__input" type="text" data-js="taskEntry" placeholder="Enter task..." />
+      </div>
+      <ul class="todo__items" data-js="todoItems">
+        <li data-js="defaultLi">
+          There are currently no tasks.
+          <br />
+          Please enter an item in the field above.
+        </li>
+      </ul>
+    </form>
+  </div>
+  <script src="app.js" async></script>
+</body>
 </html>
