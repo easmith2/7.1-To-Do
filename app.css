@@ -4,6 +4,7 @@ html {
 html,
 body {
   font-size: 14px;
+  height: 100%;
 }
 *,
 *:before,
@@ -13,13 +14,24 @@ body {
 body {
   font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
   color: #4D4D4D;
+  margin: 0;
+}
+.main {
+  background-image: url('trim.jpg');
+  background-clip: border-box;
+  background-position: right;
+  background-size: cover;
+  display: block;
+  height: 100%;
+  padding-top: 2rem;
 }
 .todo {
   width: 250px;
-  margin: 60px auto;
+  margin-left: 2rem;
   padding: 10px 15px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-  background-color: #F5F5F5;
 }
 .todo__input {
   font-size: 1rem;
